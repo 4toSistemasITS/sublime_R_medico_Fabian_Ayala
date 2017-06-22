@@ -1,0 +1,196 @@
+<html>
+<head>
+    <title>Clinica San Agustin</title>
+    <link rel="stylesheet" href="iestil.css">
+
+    <meta charset="utf-8">
+    <meta name="author" content="grupo3">
+    <meta name="description" content="Citas medicas ">
+    <link rel="stylesheet" type="text/css" href="style/estilo.css">
+    <body background="fondo.jpg">
+
+
+
+</head>
+    <body background="fondo.jpg">
+
+<div id="espacio" class="formulario">
+<center><img src="fondo.jpg" border="0" width="1320" height="40"></center>
+
+
+
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+
+
+
+
+<div id="googleMap" class="formulario">
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="activarTab('ocho')">Registro</button>
+  <button class="w3-bar-item w3-button" onclick="activarTab('nueve')">Horario</button>
+  <button class="w3-bar-item w3-button" onclick="activarTab('seleccion')">Seleccion/<button>
+</div>
+
+<script type="text/javascript">
+
+function activarTab(idTab) {
+    var i;
+    var x = document.getElementsByClassName("formulario");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(idTab).style.display = "block"; 
+}
+
+</script>
+</div>
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="m1.jpg" style="width:100%">
+  <img class="mySlides" src="m2.jpg" style="width:100%">
+  <img class="mySlides" src="m3.jpg" style="width:100%">
+  <img class="mySlides" src="m4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+<center><h1>Formulario de registro médico</h1> </center>
+
+
+
+<div id="ocho" class="formulario">
+<form class="contact_form">
+<h1>Datos</h1>
+    
+        <li><label for="name"> Nombres: </label><input type="text" placeholder="ingrese su nombre aqui" required></center></li>
+        <li><label for="name"> Apellidos: </label><input type="text" placeholder="ingrese su apeliido paterno aqui" required></center></li>
+        <li><label for="name"> Cédula: </label><input type="number" placeholder="ingrese su cedula de identidad  aqui" required></center></li>
+        <li><label for="name"> Ciudad: </label><input type="text" placeholder="ingrese su ciudad aqui" required></center></li>    
+        <p></p> 
+        <li><label for="name"> Edad: </label><input type="number" placeholder="ingrese su edad aqui" required></li>
+        <li><label for="name"> Email: </label><input type="text" placeholder="ingrese su correo" required><span class="form_hit">"ejemplo@gmail.com"</span></li>
+        <li><label for="name"> Telefono celular : </label><input type="number" placeholder="ingrese su telefono" required></li>
+        <li><label for="name"> Direccion : </label><input type="text" placeholder="ingrese su direccion" required></li>
+       
+        <button>Aceptar</button>
+
+
+
+
+
+
+</form>
+</div>
+<div id="nueve" class="formulario" style="display: none">
+<center>
+    
+    <form action="">
+
+          <center>
+              <h2 >Registrar Horarios</h2>
+          </center>
+          <input type="text" name="Paciente" placeholder="Paciente">
+          <input type="number" name="Dia" placeholder="Dia" max="31" min="1">
+          <input type="month" name="fecha" placeholder="Fecha" maxlength="2" >
+          <input type="time" name="hora" placeholder="hora"maxlength="2">
+          <input type="button" value="Enviar" id="boton" maxlength="2">
+       </form>
+</center>
+       
+   </div>
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<div class="w3-container">
+  <p><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p>
+</div>
+
+
+
+    
+    <div>
+        <center id="seleccion" class="formulario"  style="display: none">
+            
+
+
+
+              <h2>Datos de Secretaria</h2>
+                  <label for="name"> Nombre: </label><input type="text" placeholder="Ingrese su nombre aqui" required><br>
+                <label for="name"> Apellido : </label><input type="text" placeholder="Ingrese su apeliido  aqui" required><br>
+
+                  <label for="name"> Ciudad: </label><input type="text" placeholder="Ingrese su ciudad aqui" required><br>               
+                <label for="name"> Cedula: </label><input type="text" placeholder="Ingrese su cedula de identidad  aqui" required><br>
+                        
+                  <label for="name"> Email: </label><input type="text" placeholder="Ingrese su correo" required><span class="form_hit"></span><br>
+                <label for="name"> Telefono celular : </label><input type="text" placeholder="Ingrese su telefono" required><br>
+               <label for="name"> Direccion : </label><input type="text" placeholder="Ingrese su direccion" required><br>
+                   <button class="submit" type="submit">Aceptar</button> 
+
+
+                   <h3>Seleccionar Tarifa
+              <SELECT NAME="selCombo" SIZE=1 onChange="javascript:alert('Registro Exito');"> 
+              <OPTION VALUE="1">5 dolares</OPTION>
+              <OPTION VALUE="2">10 dolares</OPTION>
+              <OPTION VALUE="3">15 dolares</OPTION>
+              <OPTION VALUE="4">20 dolares</OPTION>
+              <OPTION VALUE="5">25 dolares</OPTION> 
+              <OPTION VALUE="6">25 dolares</OPTION> </h3>
+            </SELECT> 
+        </center>      
+     </div>
+
+
+
+
+
+
+
+
+<div id="dos" class="formulario">
+
+ 
+</div>
+
+
+
+</body>
+</html>
